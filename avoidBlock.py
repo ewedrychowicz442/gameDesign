@@ -1,3 +1,5 @@
+#Features: Score Counter, Game Over State, Movement Boundaries
+
 import tkinter as tk
 import random 
 
