@@ -82,5 +82,5 @@ def run_game():
 
     root.after(50, run_game)
 
-run_game()
+run_game()    
 root.mainloop()
