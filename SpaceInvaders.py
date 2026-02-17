@@ -97,3 +97,6 @@ def shoot(event):
     #Bounding Boxes
     px1, py1, px2, py2 = canvas.bbox(player)
     l = canvas.create_image((px1 + px2)//2, py1, imgage = laser_img, anchor = "s")
+
+    lasers.append(l)
+root.bind("<space>", shoot)
