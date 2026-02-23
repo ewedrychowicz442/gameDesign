@@ -147,7 +147,7 @@ def game_loop():
 
     #Make Lasers Move
     for l in lasers[:]: #Creates a copy of list to protect original
-        canvas.move(1, 0, -12)
+        canvas.move(l, 0, -12)
         x1, y1, x2, y2 = canvas.bbox(l)
         if y2 < 0:
             canvas.delete(l)
@@ -156,7 +156,7 @@ def game_loop():
     #Laser vs. Alien
     for l in lasers[:]:
         for e in enemies[:]:
-            if collision(e, l):
+            if collision(l, e):
                 canvas.delete(l)
                 canvas.delete(e)
                 if l in lasers:
